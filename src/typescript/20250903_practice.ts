@@ -22,9 +22,9 @@ const throwBallPrac = (numbers: number[], k: number): number => {
   }
 
 console.log(throwBallPrac([1, 2, 3, 4, 5], 4));
-// 1번째: [0] 1 - 1 * 2 % length = 0
-// 2번째: [2] 2 - 1 * 2 % length = 2
-// 3번째: [4] 3 - 1 * 2 % length = 4
-// 4번째: [1] 4 - 1 * 2 % length = 1
-// 5번째: [3] 5 - 1 * 2 % length = 3
-// k번째: [n] k - 1 * 2 % length = n
+// 1번째: [0] (1 - 1) * 2 % length = 0
+// 2번째: [2] (2 - 1) * 2 % length = 2
+// 3번째: [4] (3 - 1) * 2 % length = 4
+// 4번째: [1] (4 - 1) * 2 % length = 1
+// 5번째: [3] (5 - 1) * 2 % length = 3
+// k번째: [n] (k - 1) * 2 % length = n
