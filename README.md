@@ -66,3 +66,4 @@ other: git commit -m "date"
 | 20250719 | [점의 위치 구하기↗️](https://school.programmers.co.kr/learn/courses/30/lessons/120841) | Lv0 | Programmers | TypeScript |
 | 20250720 | [2차원으로 만들기↗️](https://school.programmers.co.kr/learn/courses/30/lessons/120842) | Lv0 | Programmers | TypeScript |
 | 20250721 | [공 던지기↗️](https://school.programmers.co.kr/learn/courses/30/lessons/120843) | Lv0 | Programmers | TypeScript |
+| 20250903 | 복습 | Lv0 | Programmers | TypeScript |
