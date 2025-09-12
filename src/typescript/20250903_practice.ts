@@ -17,11 +17,11 @@
  * numbers = [1, 2, 3], k = 3 → result = 2
  */
 
-const throwBallPrac = (numbers: number[], k: number): number => {
+const solution20 = (numbers: number[], k: number): number => {
     return numbers[((k - 1) * 2 ) % numbers.length]
   }
 
-console.log(throwBallPrac([1, 2, 3, 4, 5], 4));
+console.log(solution20([1, 2, 3, 4, 5], 4));
 // 1번째: [0] (1 - 1) * 2 % length = 0
 // 2번째: [2] (2 - 1) * 2 % length = 2
 // 3번째: [4] (3 - 1) * 2 % length = 4

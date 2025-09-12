@@ -2,7 +2,7 @@
  * 분수의 덧셈
  * 최대 공약수로 나눈 값을 [분모, 분자] 형태로 반환
  */
-const fractionAdditionPracV2 = (
+const solution13 = (
   bunmo1: number,
   bunza1: number,
   bunmo2: number,
@@ -25,9 +25,9 @@ const fractionAdditionPracV2 = (
   return [bunmo3, bunza3];
 };
 
-console.log(fractionAdditionPracV2(2, 1, 3, 4)); // [6, 11]
-console.log(fractionAdditionPracV2(3, 5, 7, 10)); // [21, 65]
-console.log(fractionAdditionPracV2(2, 1, 2, 1)); // [1, 1]
+console.log(solution13(2, 1, 3, 4)); // [6, 11]
+console.log(solution13(3, 5, 7, 10)); // [21, 65]
+console.log(solution13(2, 1, 2, 1)); // [1, 1]
 console.log(`========================`);
 
 /**
@@ -37,7 +37,7 @@ console.log(`========================`);
  * 0 < array의 길이 < 100
  * 0 ≤ array의 원소 < 1000
  **/
-const calculateModeNumberPrac = (array: number[]) => {
+const solution14 = (array: number[]) => {
   let modeNumber: number = -1;
   let modeNumberCnt: number = 0;
   let arrayNumber: number = -1;
@@ -68,8 +68,8 @@ const calculateModeNumberPrac = (array: number[]) => {
   return [modeNumber, modeNumberCnt];
 };
 
-console.log(calculateModeNumberPrac([3, 3, 1, 1, 3, 2, 1, 3, 3, 3, 3])); // [3, 7]
-console.log(calculateModeNumberPrac([3, 3, 1, 1, 3, 2, 1, 4])); // [-1, 0]
+console.log(solution14([3, 3, 1, 1, 3, 2, 1, 3, 3, 3, 3])); // [3, 7]
+console.log(solution14([3, 3, 1, 1, 3, 2, 1, 4])); // [-1, 0]
 console.log(`========================`);
 
 /**
@@ -85,7 +85,7 @@ console.log(`========================`);
  * 입출력 예
  * | "banana"   | "na"   | "ba"    |
  */
-const deleteFirstStringPracV2 = (myString: string, letter: string): string => {
+const solution15 = (myString: string, letter: string): string => {
   let result: string = ``;
   for (let i: number = 0; i < myString.length; i = i + 1) {
     let isMatch: boolean = true;
@@ -104,8 +104,8 @@ const deleteFirstStringPracV2 = (myString: string, letter: string): string => {
   return result;
 };
 
-console.log(deleteFirstStringPracV2(`banana`, `na`));
-console.log(deleteFirstStringPracV2(`abcdeffcde`, `cde`));
+console.log(solution15(`banana`, `na`));
+console.log(solution15(`abcdeffcde`, `cde`));
 console.log(`========================`);
 
 /**
@@ -125,7 +125,7 @@ console.log(`========================`);
  * | [1, 2, 3, 4, 5, 6, 7]   | [7, 6, 5, 4, 3, 2, 1] |
  * | [30, 10, 23, 6, 100]    | [2, 4, 3, 5, 1]  |
  */
-const emergencyNumberPrac = (emergency: number[]): number[] => {
+const solution16 = (emergency: number[]): number[] => {
   let rank: number = 1;
   let result: number[] = [];
   for (let i: number = 0; i < emergency.length; i = i + 1) {
@@ -140,12 +140,12 @@ const emergencyNumberPrac = (emergency: number[]): number[] => {
   return result;
 };
 
-console.log(emergencyNumberPrac([3, 76, 24]));
-console.log(emergencyNumberPrac([1, 2, 3, 4, 5, 6, 7]));
-console.log(emergencyNumberPrac([30, 10, 23, 6, 100]));
+console.log(solution16([3, 76, 24]));
+console.log(solution16([1, 2, 3, 4, 5, 6, 7]));
+console.log(solution16([30, 10, 23, 6, 100]));
 console.log(`========================`);
 
-const emergencyNumberWithIdxPrac = (emergency: number[]): number[] => {
+const solution17 = (emergency: number[]): number[] => {
   let arrayWithIdx = [];
   for (let i: number = 0; i < emergency.length; i = i + 1) {
     arrayWithIdx.push({ value: emergency[i], idx: i });
@@ -182,9 +182,9 @@ const emergencyNumberWithIdxPrac = (emergency: number[]): number[] => {
   return result;
 };
 
-console.log(emergencyNumberWithIdxPrac([3, 76, 24]));
-console.log(emergencyNumberWithIdxPrac([1, 2, 3, 4, 5, 6, 7]));
-console.log(emergencyNumberWithIdxPrac([30, 10, 23, 6, 100]));
+console.log(solution17([3, 76, 24]));
+console.log(solution17([1, 2, 3, 4, 5, 6, 7]));
+console.log(solution17([30, 10, 23, 6, 100]));
 console.log(`========================`);
 
 /**
@@ -216,7 +216,7 @@ console.log(`========================`);
  * ".... . .-.. .-.. ---"        | "hello"
  * ".--. -.-- - .... --- -."     | "python"
  */
-const morseCodeTranslator1Prac = (letter: string): string => {
+const solution18 = (letter: string): string => {
   const morse: Record<string, string> = {
     ".-": "a",
     "-...": "b",
@@ -259,11 +259,11 @@ const morseCodeTranslator1Prac = (letter: string): string => {
   return result;
 };
 
-console.log(morseCodeTranslator1Prac(".... . .-.. .-.. ---"));
-console.log(morseCodeTranslator1Prac(".--. -.-- - .... --- -."));
+console.log(solution18(".... . .-.. .-.. ---"));
+console.log(solution18(".--. -.-- - .... --- -."));
 console.log(`========================`);
 
-const morseCodeTranslator1UseSplitPrac = (letter: string): string => {
+const solution19 = (letter: string): string => {
   const morse: Record<string, string> = {
     ".-": "a",
     "-...": "b",
@@ -300,5 +300,5 @@ const morseCodeTranslator1UseSplitPrac = (letter: string): string => {
   return result;
 };
 
-console.log(morseCodeTranslator1UseSplitPrac(".... . .-.. .-.. ---"));
-console.log(morseCodeTranslator1UseSplitPrac(".--. -.-- - .... --- -."));
+console.log(solution19(".... . .-.. .-.. ---"));
+console.log(solution19(".--. -.-- - .... --- -."));

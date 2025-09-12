@@ -5,7 +5,7 @@
  * 0 < array의 길이 < 100
  * 0 ≤ array의 원소 < 1000
  **/
-const calculateModePrac = (array: number[]): number[] => {
+const solution3 = (array: number[]): number[] => {
   // 주어진 배열을 오름차순으로 정리
   let sortedArray: number[] = [];
   let cntArray: number = 0;
@@ -76,7 +76,7 @@ const calculateModePrac = (array: number[]): number[] => {
   return [modeNumber, modeNumberCnt];
 };
 
-console.log(calculateModePrac([-5, 1, 1, 0, 3, 3, 1, 3, 3]));
+console.log(solution3([-5, 1, 1, 0, 3, 3, 1, 3, 3]));
 console.log(`========================`);
 
 /**
@@ -91,7 +91,7 @@ console.log(`========================`);
  * solution(10) => [1, 3, 5, 7, 9]
  * solution(15) => [1, 3, 5, 7, 9, 11, 13, 15]
  **/
-const iDontLikeEvenNumberPrac = (n: number): number[] => {
+const solution4 = (n: number): number[] => {
   let result: number[] = [];
   let cnt: number = 1;
   while (cnt <= n) {
@@ -103,4 +103,4 @@ const iDontLikeEvenNumberPrac = (n: number): number[] => {
   return result;
 };
 
-console.log(iDontLikeEvenNumberPrac(10));
+console.log(solution4(10));

@@ -12,7 +12,7 @@
  * | "banana"   | "na"   | "ba"    |
  */
 // letter.length만큼 반복하는 for문에서 myString[i + j] === letter[j]가 같다면 겹치는 단어라는 뜻
-const deleteAllStringPrac = (myString: string, letter: string): string => {
+const solution11 = (myString: string, letter: string): string => {
   let result: string = ``;
   for (let i: number = 0; i < myString.length; i = i + 1) {
     let isMatch: boolean = true;
@@ -31,8 +31,8 @@ const deleteAllStringPrac = (myString: string, letter: string): string => {
   return result;
 };
 
-console.log(deleteAllStringPrac(`bbbnbbbnanabbb`, `na`)); // bbbnbbb
-console.log(deleteAllStringPrac("abcfdefghf", "f")); // abcdegh
+console.log(solution11(`bbbnbbbnanabbb`, `na`)); // bbbnbbb
+console.log(solution11("abcfdefghf", "f")); // abcdegh
 console.log(`========================`);
 
 /**
@@ -51,7 +51,7 @@ console.log(`========================`);
 // myString[i + j] === letter.length[j]가 모두 같다면 겹치는 부분 즉, result에 추가 X
 // 위 조건을 만족해서 추가를 안했다는 것은 삭제됐다는 말이기 때문에 isRemoved를 true로 변경
 // 이후, isRemoved를 사용해서 모든 문자열 추가
-const deleteFirstStringPrac = (myString: string, letter: string): string => {
+const solution12 = (myString: string, letter: string): string => {
   let result: string = ``;
   let isRemoved: boolean = false;
   for (let i: number = 0; i < myString.length; i = i + 1) {
@@ -74,5 +74,5 @@ const deleteFirstStringPrac = (myString: string, letter: string): string => {
   return result;
 };
 
-console.log(deleteFirstStringPrac(`bbbnbbbnanabbb`, `na`)); // bbbnbbbnabbb
-console.log(deleteFirstStringPrac("abcfdefghf", "f")); // abcdefghf
+console.log(solution12(`bbbnbbbnanabbb`, `na`)); // bbbnbbbnabbb
+console.log(solution12("abcfdefghf", "f")); // abcdefghf

@@ -61,7 +61,7 @@ const userInfoOnlyEmailName = (userInfo: string[]) => {
 };
 
 const userInfo: string[] = [
-  "aaa@naver.com, 철수, 15",
+  "aaa@naver.com, 철수, 10",
   "bbb@gmail.com, 영희, 10",
   "ccc@gmail.com, 재희, 18",
 ];
