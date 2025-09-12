@@ -148,11 +148,7 @@ console.log(solution9(`Progra21Sremm3`, 6, 12));
 console.log(solution9(`Stanley1yelnatS`, 4, 10));
 console.log(`========================`);
 
-const solution10 = (
-  myString: string,
-  s: number,
-  e: number,
-): string => {
+const solution10 = (myString: string, s: number, e: number): string => {
   const arrayBeforeS: string = myString.split(``).slice(0, s).join(``);
   const arrayFromE: string = myString
     .split(``)

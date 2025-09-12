@@ -22,7 +22,7 @@ const nElementNumArray = (numList: number[], n: number): number[][] => {
   let answer: number[] = [];
   let result: number[][] = [];
   for (let i: number = 0; i < numList.length; i = i + 1) {
-      answer.push(numList[i]);
+    answer.push(numList[i]);
     if (answer.length === n) {
       result.push(answer);
       answer = [];

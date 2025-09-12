@@ -29,10 +29,10 @@ const throwBall = (numbers: number[], k: number): number => {
       return numbers[i];
     }
   }
-}
+};
 
 console.log(throwBall([1, 2, 3, 4], 5));
-console.log(throwBall([1, 2, 3, 4, 5 ,6], 5));
+console.log(throwBall([1, 2, 3, 4, 5, 6], 5));
 console.log(throwBall([1, 2, 3], 3));
 console.log(`========================`);
 
@@ -41,8 +41,8 @@ console.log(`========================`);
 // 왜 -1을 해야하는건지? -> [index]라서
 const throwBallBetter = (numbers: number[], k: number): number => {
   return numbers[((k - 1) * 2) % numbers.length];
-}
+};
 
 console.log(throwBallBetter([1, 2, 3, 4], 5));
-console.log(throwBallBetter([1, 2, 3, 4, 5 ,6], 5));
+console.log(throwBallBetter([1, 2, 3, 4, 5, 6], 5));
 console.log(throwBallBetter([1, 2, 3], 3));

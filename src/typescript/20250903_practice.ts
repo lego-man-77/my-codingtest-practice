@@ -18,8 +18,8 @@
  */
 
 const solution20 = (numbers: number[], k: number): number => {
-    return numbers[((k - 1) * 2 ) % numbers.length]
-  }
+  return numbers[((k - 1) * 2) % numbers.length];
+};
 
 console.log(solution20([1, 2, 3, 4, 5], 4));
 // 1번째: [0] (1 - 1) * 2 % length = 0
