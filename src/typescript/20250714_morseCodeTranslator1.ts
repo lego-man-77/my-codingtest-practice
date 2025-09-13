@@ -108,6 +108,7 @@ const morseCodeTranslator1UseSplit = (letter: string): string => {
   };
   let result: string = ``;
   let answer: string[] = letter.split(` `);
+  console.log(answer)
   for (let i: number = 0; i < answer.length; i = i + 1) {
     result = result + morseMap[answer[i]];
   }

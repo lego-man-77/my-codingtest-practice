@@ -19,7 +19,7 @@ const ballsShare = (balls: number, share: number): number => {
   for (let i: number = 1; i <= share; i = i + 1) {
     result = (result * (balls - share + i)) / i;
   }
-  console.log(result);
+
   return result;
 };
 
@@ -29,7 +29,7 @@ console.log(ballsShare(5, 2));
 console.log(ballsShare(30, 3));
 // balls의 팩토리얼, share의 팩토리얼, balls - share의 팩토리얼을 다 구해서,
 // Combination의 공식에 대입해도 되지만,
-// 30!과 같은 너무 큰 숫자는 JS에서 정밀도가 떨어지고 오버 플로우 에러가 발생할 수 있음
+// 30!과 같은 너무 큰 숫자는 JavaScript에서 정밀도가 떨어지고 오버 플로우 에러가 발생할 수 있음
 // 그래서 위와 같은 개선된 형식으로 코딩
 
 // Factorial(팩토리얼)
