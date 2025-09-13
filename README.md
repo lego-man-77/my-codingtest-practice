@@ -68,3 +68,4 @@ other: git commit -m "date"
 | 20250721 | [공 던지기↗️](https://school.programmers.co.kr/learn/courses/30/lessons/120843) | Lv0 | Programmers | TypeScript |
 | 20250903 | 복습 | Lv0 | Programmers | TypeScript |
 | 20250912 | 복습 | Lv0 | Programmers | TypeScript |
+| 20250913 | 복습 | Lv0 | Programmers | TypeScript |
