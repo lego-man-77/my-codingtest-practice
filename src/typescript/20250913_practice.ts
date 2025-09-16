@@ -39,12 +39,15 @@ const solution22 = (balls: number, share: number): number => {
 console.log(solution22(3, 2)); // 3
 console.log(solution22(5, 3)); // 10
 console.log(solution22(6, 4)); // 15
+console.log(solution22(10, 3)); // 20
+console.log(solution22(10, 8)); // 45
 console.log(`========================`);
 
 const solution23 = (balls: number, share: number): number => {
+  const minNumber = Math.min(share, balls - share);
   let result = 1;
-  for (let i = 1; i <= balls - share; i = i + 1) {
-    result = (result * (share + i)) / i;
+  for (let i = 1; i <= minNumber; i = i + 1) {
+    result = (result * (balls - minNumber + i)) / i;
   }
 
   return result;
@@ -53,3 +56,5 @@ const solution23 = (balls: number, share: number): number => {
 console.log(solution23(3, 2)); // 3
 console.log(solution23(5, 3)); // 10
 console.log(solution23(6, 4)); // 15
+console.log(solution23(10, 3)); // 20
+console.log(solution23(10, 8)); // 45
