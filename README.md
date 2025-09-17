@@ -72,3 +72,4 @@ other: git commit -m "date"
 | 20250914 | [배열 회전시키기↗️](https://school.programmers.co.kr/learn/courses/30/lessons/120844) | Lv0 | Programmers | TypeScript |
 | 20250915 | [주사위의 개수↗️](https://school.programmers.co.kr/learn/courses/30/lessons/120845) | Lv0 | Programmers | TypeScript |
 | 20250916 | [합성수 찾기↗️](https://school.programmers.co.kr/learn/courses/30/lessons/120846) | Lv0 | Programmers | TypeScript |
+| 20250917 | [최댓값 만들기 (1)↗️](https://school.programmers.co.kr/learn/courses/30/lessons/120847) | Lv0 | Programmers | TypeScript |
