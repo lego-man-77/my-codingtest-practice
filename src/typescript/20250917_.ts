@@ -50,10 +50,24 @@ console.log(`========================`);
  *
  * 입출력 예
  * numbers	                result
- * [1, 5, -90, -200]	      19800
+ * [1, 5, -99, -200]	      19800
  */
 const maxMultipleOfArrayUseSort = (numbers: number[]): number => {
-
-  return 0;
+  const sortedArray = numbers.sort((a, b) => a - b);
+  const firstCompareMaxNumber = sortedArray[0] * sortedArray[1]
+  const secondCompareMaxNumber = sortedArray[sortedArray.length - 1] * sortedArray[sortedArray.length - 2]
+  console.log(sortedArray);
+  if (secondCompareMaxNumber < firstCompareMaxNumber) {
+    return firstCompareMaxNumber;
+  } else {
+    return secondCompareMaxNumber;
+  }
 }
-console.log(maxMultipleOfArrayUseSort([1, 5, -90, -200])) // 19800
+
+console.log(maxMultipleOfArrayUseSort([1, 5, -99, -200])) // 19800
+
+// sort의 "a - b", "b - a"는 배열의 각 원소를 비교하는 값이고,
+// 그 값이 "양수"라면 두 위치를 바꾼다.
+// a에서 b를 뺀다면 "오름차순"이 되고,
+// b에서 a를 뺀다면 "내림차순"이 됨
+// [3, 1, 2]와 같은 단순한 배열로 계산해보면 이해가 됨
