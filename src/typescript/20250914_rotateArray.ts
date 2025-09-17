@@ -21,7 +21,6 @@
  * numbers 가 [4, 455, 6, 4, -1, 45, 6]이고 direction이 "left" 이므로
  * 왼쪽으로 한 칸씩 회전시킨 [455, 6, 4, -1, 45, 6, 4]를 return합니다.
  */
-
 const rotateArray = (numbers: number[], direction: string): number[] => {
   let result: number[] = [];
   if (direction === 'left') {
@@ -40,6 +39,7 @@ const rotateArray = (numbers: number[], direction: string): number[] => {
 
 console.log(rotateArray([1, 2, 3, 4], `left`))
 console.log(rotateArray([1, 2, 3, 4], `right`))
+console.log(`========================`);
 
 const rotateArrayUseArrayMethod = (numbers: number[], direction: string): number[] => {
   if (direction === 'left') {

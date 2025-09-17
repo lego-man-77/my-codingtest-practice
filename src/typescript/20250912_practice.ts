@@ -5,7 +5,6 @@
  * 0 < array의 길이 < 100
  * 0 ≤ array의 원소 < 1000
  **/
-
 const solution21 = (array: number[]): number[] => {
   let sortedArray = [];
   for (let i = 0; i < array.length; i = i + 1) {

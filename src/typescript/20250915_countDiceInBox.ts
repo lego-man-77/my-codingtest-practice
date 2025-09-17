@@ -15,7 +15,6 @@
  * - box: [1, 1, 1], n: 1 -> result: 1
  * - box: [10, 8, 6], n: 3 -> result: 12
 */
-
 const countDiceInBox = (box: number[], n: number): number => {
   let result = 1;
   for (let i = 0; i < 3; i = i + 1) {

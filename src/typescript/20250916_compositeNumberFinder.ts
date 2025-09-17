@@ -18,7 +18,6 @@
  * 입출력 예 #2
  * 15 이하 합성수는 4, 6, 8, 9, 10, 12, 14, 15 로 8개입니다. 따라서 8을 return합니다.
  */
-
 const compositeNumberFinder = (n: number): number => {
   let result = 0;
   for (let i = 4; i <= n; i = i + 1) {
@@ -34,6 +33,7 @@ const compositeNumberFinder = (n: number): number => {
 
 console.log(compositeNumberFinder(10));
 console.log(compositeNumberFinder(15));
+console.log(`========================`);
 
 /**
  * GPT 코드

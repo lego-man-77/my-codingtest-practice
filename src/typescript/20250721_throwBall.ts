@@ -16,7 +16,6 @@
  * numbers = [1, 2, 3, 4, 5, 6], k = 5 → result = 3
  * numbers = [1, 2, 3], k = 3 → result = 2
  */
-
 const throwBall = (numbers: number[], k: number): number => {
   let alreadyThrowBall: number = 0;
   // 배열을 계속 순환해야하니까 중간식은 "공백"

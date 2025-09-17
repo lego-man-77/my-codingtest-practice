@@ -16,7 +16,6 @@
  * numbers = [1, 2, 3, 4, 5, 6], k = 5 → result = 3
  * numbers = [1, 2, 3], k = 3 → result = 2
  */
-
 const solution20 = (numbers: number[], k: number): number => {
   return numbers[((k - 1) * 2) % numbers.length];
 };

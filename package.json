@@ -2,7 +2,7 @@
   "name": "my-codingtest-practice",
   "version": "1.0.0",
   "scripts": {
-    "pretty": "prettier --write \"src/**/*\""
+    "format": "prettier --write \"src/**/*\""
   },
   "private": true,
   "devDependencies": {
