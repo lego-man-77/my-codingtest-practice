@@ -1,0 +1,13 @@
+{
+  "name": "my-codingtest-practice",
+  "version": "1.0.0",
+  "scripts": {
+    "format": "prettier --write \"src/**/*\""
+  },
+  "private": true,
+  "devDependencies": {
+    "@types/node": "^22.15.29",
+    "prettier": "^3.5.3",
+    "typescript": "^5.8.3"
+  }
+}
