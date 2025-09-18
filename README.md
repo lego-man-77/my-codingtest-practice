@@ -13,7 +13,7 @@ default: git commit -m "date"
 
 ---
 
-### 🏃‍➡️ how to run coding-test-file
+### 🏃‍➡️ How to run coding-test-file
 ```
 ⚠️명령어 실행 시, 경로 주의⚠️
 C: devcontainer/C/src경로에서 ➡️ gcc -o {실행파일명} {.c파일명} && ./{실행파일명}
