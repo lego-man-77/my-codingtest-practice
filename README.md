@@ -15,7 +15,7 @@ default: git commit -m "date"
 
 ### 🏃‍➡️ how to run coding-test-file
 ```
-명령어 실행 경로 주의
+⚠️ 명령어 실행 시, 경로 주의
 C: devcontainer/C/src 경로에서 ➡️ gcc -o {실행파일명} {.c파일명} && ./{실행파일명}
 TS: TypeScript 경로에서 ➡️ npx tsc && node /dist/{ts파일명}.js
 ```
@@ -82,3 +82,4 @@ TS: TypeScript 경로에서 ➡️ npx tsc && node /dist/{ts파일명}.js
 | 20250916 | [합성수 찾기↗️](https://school.programmers.co.kr/learn/courses/30/lessons/120846) | Lv0 | Programmers | TypeScript |
 | 20250917 | [최댓값 만들기 (1)↗️](https://school.programmers.co.kr/learn/courses/30/lessons/120847) | Lv0 | Programmers | TypeScript |
 | 20250918 | [팩토리얼↗️](https://school.programmers.co.kr/learn/courses/30/lessons/120848) | Lv0 | Programmers | TypeScript |
+| 20250918 | [문자열 출력하기↗️](https://school.programmers.co.kr/learn/courses/30/lessons/181952) | Lv0 | Programmers | C |
