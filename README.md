@@ -61,7 +61,7 @@ other: git commit -m "date"
 | 20250714 | [모스부호 (1)↗️](https://school.programmers.co.kr/learn/courses/30/lessons/120838) | Lv0 | Programmers | TypeScript |
 | 20250715 | [가위 바위 보↗️](https://school.programmers.co.kr/learn/courses/30/lessons/120839) | Lv0 | Programmers | TypeScript |
 | 20250716 | 복습 | Lv0 | Programmers | TypeScript |
-| 20250717 | split 연습 | Lv0 | Lv0 | Custom | TypeScript |
+| 20250717 | split 연습 | Lv1 | Custom | TypeScript |
 | 20250718 | [구슬을 나누는 경우의 수↗️](https://school.programmers.co.kr/learn/courses/30/lessons/120840) | Lv0 | Programmers | TypeScript |
 | 20250719 | [점의 위치 구하기↗️](https://school.programmers.co.kr/learn/courses/30/lessons/120841) | Lv0 | Programmers | TypeScript |
 | 20250720 | [2차원으로 만들기↗️](https://school.programmers.co.kr/learn/courses/30/lessons/120842) | Lv0 | Programmers | TypeScript |
@@ -73,3 +73,4 @@ other: git commit -m "date"
 | 20250915 | [주사위의 개수↗️](https://school.programmers.co.kr/learn/courses/30/lessons/120845) | Lv0 | Programmers | TypeScript |
 | 20250916 | [합성수 찾기↗️](https://school.programmers.co.kr/learn/courses/30/lessons/120846) | Lv0 | Programmers | TypeScript |
 | 20250917 | [최댓값 만들기 (1)↗️](https://school.programmers.co.kr/learn/courses/30/lessons/120847) | Lv0 | Programmers | TypeScript |
+| 20250918 | [팩토리얼↗️](https://school.programmers.co.kr/learn/courses/30/lessons/120848) | Lv0 | Programmers | TypeScript |
