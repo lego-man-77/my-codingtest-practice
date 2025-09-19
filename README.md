@@ -89,3 +89,4 @@ TS: TypeScript경로에서
 | 20250917 | [최댓값 만들기 (1)↗️](https://school.programmers.co.kr/learn/courses/30/lessons/120847) | Lv0 | Programmers | TypeScript |
 | 20250918 | [팩토리얼↗️](https://school.programmers.co.kr/learn/courses/30/lessons/120848) | Lv0 | Programmers | TypeScript |
 | 20250918 | [문자열 출력하기↗️](https://school.programmers.co.kr/learn/courses/30/lessons/181952) | Lv0 | Programmers | C |
+| 20250919 | [모음 제거↗️](https://school.programmers.co.kr/learn/courses/30/lessons/120849) | Lv0 | Programmers | TypeScript |
