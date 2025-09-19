@@ -7,7 +7,7 @@ TypeScript, C, etc.
 
 ### 🤙 Commit Convention
 ```
-default: git commit -m "date"
+git commit -m "date"
 ```
 
 ---
