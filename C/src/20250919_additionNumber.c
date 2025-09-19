@@ -19,7 +19,7 @@ num1이 2이고 num2가 3이므로 2 + 3 = 5를 return합니다.
 입출력 예 #2
 num1이 100이고 num2가 2이므로 100 + 2 = 102를 return합니다.
 */
-#include <stdio.h>    // 표준 입출력 함수 사용을 위한 헤더파일
+#include <stdio.h> // 표준 입출력 함수 사용을 위한 헤더파일
 
 int additionNumber(int num1, int num2) {
   printf("%d + %d = %d\n", num1, num2, num1 + num2);
