@@ -15,8 +15,14 @@ git commit -m "date"
 ### 🏃‍➡️ How to run coding-test-file
 ```
 ⚠️명령어 실행 시, 경로 주의⚠️
-C: devcontainer/C/src경로에서 ➡️ gcc -o {실행파일명} {.c파일명} && ./{실행파일명}
-TS: TypeScript경로에서 ➡️ npx tsc && node /dist/{.ts파일명}.js
+C: devcontainer/C/src경로에서
+  ➡️ gcc -o {실행파일명} {.c파일명}
+  ➡️ ./{실행파일명}
+
+TS: TypeScript경로에서
+  ➡️ Terminal에서 npm install -D
+  ➡️ npx tsc
+  ➡️ node dist/{.ts파일명}.js
 ```
 
 ---
