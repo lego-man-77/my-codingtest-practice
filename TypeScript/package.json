@@ -2,6 +2,7 @@
   "name": "my-codingtest-practice",
   "version": "1.0.0",
   "scripts": {
+    "start": "npx tsc && node dist/20250919_removeVowels.js",
     "format": "prettier --write \"src/**/*\""
   },
   "private": true,

@@ -3,7 +3,7 @@
 // char 최대 입력 크기 (문자열 길이 + '\0')
 #define LEN_INPUT 1000001
 
-int main(void) {
+int printString(void) {
   char s1[LEN_INPUT];
 
   // 문자열 입력 (공백 전까지만 읽음)
@@ -14,4 +14,8 @@ int main(void) {
 
   // 프로그램 정상 종료
   return 0;
+}
+
+int main(void) {
+  printString();
 }
