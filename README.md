@@ -1,7 +1,6 @@
-### 🧑‍💻 Coding Test Practice  
+### 🧑‍💻 Language
 ```
-Practice Coding Test with Baekjoon, programmers, etc.  
-Language: TypeScript, C, etc.
+TypeScript, C, etc.
 ```
 
 ---
