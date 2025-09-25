@@ -93,3 +93,4 @@ TS: TypeScript경로에서
 | 20250919 | [두 수의 합 구하기↗️](https://school.programmers.co.kr/learn/courses/30/lessons/120802) | Lv0 | Programmers | C |
 | 20250920 | [문자열 정렬하기 (1)↗️](https://school.programmers.co.kr/learn/courses/30/lessons/120850) | Lv0 | Programmers | TypeScript |
 | 20250921 | [숨어있는 숫자의 덧셈 (1)↗️](https://school.programmers.co.kr/learn/courses/30/lessons/120851) | Lv0 | Programmers | TypeScript |
+| 20250924 | [소인수분해↗️](https://school.programmers.co.kr/learn/courses/30/lessons/120852) | Lv0 | Programmers | TypeScript |
