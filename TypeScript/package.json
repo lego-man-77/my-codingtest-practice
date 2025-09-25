@@ -2,7 +2,7 @@
   "name": "my-codingtest-practice",
   "version": "1.0.0",
   "scripts": {
-    "start": "npx tsc && node dist/20250921_hiddenNumberSum.js",
+    "start": "npx tsc && node dist/20250924_.js",
     "format": "prettier --write \"src/**/*\""
   },
   "private": true,
