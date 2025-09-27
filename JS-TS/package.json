@@ -2,8 +2,8 @@
   "name": "my-codingtest-practice",
   "version": "1.0.0",
   "scripts": {
-    "ts": "tsc && node dist/[파일명].js",
-    "js": "node src-js/[파일명].js",
+    "ts": "tsc && node dist/{파일명}.js",
+    "js": "node src-js/{파일명}.js",
     "format": "prettier --write \"src-ts/**/*\" \"src-js/**/*\""
   },
   "private": true,
