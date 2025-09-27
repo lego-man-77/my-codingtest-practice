@@ -16,7 +16,7 @@ git commit -m "date"
 ```
 ⚠️명령어 실행 시, 경로 주의⚠️
 
-Install Code Runner (20250927)
+Code Runner
   ➡️ 원하는 코드에서 Con + Alt + N
 
 C: devcontainer/C/src경로에서
