@@ -27,13 +27,13 @@ my_string	       result
 
 const hiddenNumberSum = (myString: string): number => {
   let result: number = 0;
-  for(let i = 0; i < myString.length; i = i + 1) {
-    if(!isNaN(Number(myString[i]))) {
+  for (let i = 0; i < myString.length; i = i + 1) {
+    if (!isNaN(Number(myString[i]))) {
       result = result + Number(myString[i]);
     }
   }
   return result;
-}
+};
 
 console.log(hiddenNumberSum(`aAb1B2cC34oOp`)); // 10
 console.log(hiddenNumberSum(`1a2b3c4d123`)); // 16

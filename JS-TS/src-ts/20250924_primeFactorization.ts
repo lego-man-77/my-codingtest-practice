@@ -27,16 +27,16 @@ n	   result
 */
 const primeFactorization = (n: number): number[] => {
   let result: number[] = [];
-  for (let i: number = 2; n !== 1 ; i = i + 1) {
+  for (let i: number = 2; n !== 1; i = i + 1) {
     if (n % i === 0) {
-      while(n % i === 0) {
-        n = n / i
+      while (n % i === 0) {
+        n = n / i;
       }
-      result.push(i)
+      result.push(i);
     }
   }
   return result;
-}
+};
 
 console.log(primeFactorization(12));
 console.log(primeFactorization(17));

@@ -25,14 +25,14 @@ my_string	    result
 "abcde0"에 있는 숫자 0을 오름차순 정렬한 [0]을 return 합니다.
 */
 const sortNumberInString = (myString: string): number[] => {
-let onlyNumberArray: number[] = [];
-  for(let i = 0; i < myString.length; i = i + 1) {
-    if(!isNaN(Number(myString[i]))) {
+  let onlyNumberArray: number[] = [];
+  for (let i = 0; i < myString.length; i = i + 1) {
+    if (!isNaN(Number(myString[i]))) {
       onlyNumberArray.push(Number(myString[i]));
     }
   }
   return onlyNumberArray.sort((a: number, b: number) => a - b);
-}
+};
 
 console.log(sortNumberInString(`hi12392`));
 console.log(sortNumberInString(`abcde0`));
