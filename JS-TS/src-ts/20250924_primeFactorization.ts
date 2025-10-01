@@ -39,6 +39,7 @@ const primeFactorization = (n: number): number[] => {
 };
 
 console.log(primeFactorization(12));
+console.log(primeFactorization(10));
 console.log(primeFactorization(17));
 console.log(primeFactorization(100));
 console.log(primeFactorization(420));

@@ -1,0 +1,68 @@
+/**
+ * 문제 설명
+ * 정수 배열 array와 정수 n이 매개변수로 주어질 때,
+ * array에 들어있는 정수 중 n과 가장 가까운 수를 return 하도록 solution 함수를 완성해주세요.
+ *
+ * 제한사항
+ * 1 ≤ array의 길이 ≤ 100
+ * 1 ≤ array의 원소 ≤ 100
+ * 1 ≤ n ≤ 100
+ * 가장 가까운 수가 여러 개일 경우 더 작은 수를 return 합니다.
+ *
+ * 입출력 예
+ * array	        n	result
+ * [3, 10, 28]	    20	28
+ * [10, 11, 12]	13	12
+ *
+ * 입출력 예 설명
+ * 입출력 예 #1
+ * 3, 10, 28 중 20과 가장 가까운 수는 28입니다.
+ *
+ * 입출력 예 #2
+ * 10, 11, 12 중 13과 가장 가까운 수는 12입니다.
+ */
+const closestNumber = (array: number[], n: number) => {
+  let compareNumber: number = 100;
+  let result: number = 0;
+  let answer: number = 0;
+  for (let i: number = 0; i < array.length; i = i + 1) {
+    result = Math.abs(n - array[i]);
+    if (result < compareNumber) {
+      compareNumber = result;
+      answer = array[i];
+    } else if (result === compareNumber && array[i] < answer) {
+      answer = array[i];
+    }
+    if (result === 0) {
+      return array[i];
+    }
+  }
+  return answer;
+};
+
+console.log(closestNumber([10, 14, 11, 12], 13));
+console.log(closestNumber([10, 14, 11, 12, 13], 13));
+console.log(`========================`);
+
+const closestNumberUseSort = (array: number[], n: number) => {
+  const sortedArray: number[] = array.sort((a, b) => a - b);
+
+  let compareNumber: number = 100;
+  let result: number = 0;
+  let answer: number = 0;
+  for (let i: number = 0; i < sortedArray.length; i = i + 1) {
+    result = Math.abs(n - sortedArray[i]);
+    if (result === 0) {
+      return sortedArray[i];
+    }
+
+    if (result < compareNumber) {
+      compareNumber = result;
+      answer = sortedArray[i];
+    }
+  }
+  return answer;
+};
+
+console.log(closestNumberUseSort([10, 14, 11, 12], 13));
+console.log(closestNumberUseSort([10, 14, 11, 12, 13], 13));
