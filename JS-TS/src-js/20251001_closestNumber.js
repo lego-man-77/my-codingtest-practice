@@ -21,7 +21,7 @@
  * 입출력 예 #2
  * 10, 11, 12 중 13과 가장 가까운 수는 12입니다.
  */
-function closestNumber(array, n) {
+const closestNumber = (array, n) => {
   let compareNumber = 100;
   let result = 0;
   let answer = 0;

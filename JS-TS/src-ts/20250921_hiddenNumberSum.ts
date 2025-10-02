@@ -24,7 +24,6 @@ my_string	       result
 유의사항
 연속된 숫자도 각각 한 자리 숫자로 취급합니다.
 */
-
 const hiddenNumberSum = (myString: string): number => {
   let result: number = 0;
   for (let i = 0; i < myString.length; i = i + 1) {
