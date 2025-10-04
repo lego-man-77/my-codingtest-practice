@@ -100,3 +100,4 @@ TS: TypeScript경로에서
 | 20251001 | [가까운 수↗️](https://school.programmers.co.kr/learn/courses/30/lessons/120890?language=javascript) | Lv0 | Programmers | TypeScript, JavaScript |
 | 20251002 | [369게임↗️](https://school.programmers.co.kr/learn/courses/30/lessons/120891) | Lv0 | Programmers | TypeScript, JavaScript |
 | 20251003 | [암호 해독↗️](https://school.programmers.co.kr/learn/courses/30/lessons/120892) | Lv0 | Programmers | TypeScript, JavaScript |
+| 20251004 | [대문자와 소문자↗️](https://school.programmers.co.kr/learn/courses/30/lessons/120893) | Lv0 | Programmers | TypeScript, JavaScript |
