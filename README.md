@@ -101,3 +101,7 @@ TS: TypeScript경로에서
 | 20251002 | [369게임↗️](https://school.programmers.co.kr/learn/courses/30/lessons/120891) | Lv0 | Programmers | TypeScript, JavaScript |
 | 20251003 | [암호 해독↗️](https://school.programmers.co.kr/learn/courses/30/lessons/120892) | Lv0 | Programmers | TypeScript, JavaScript |
 | 20251004 | [대문자와 소문자↗️](https://school.programmers.co.kr/learn/courses/30/lessons/120893) | Lv0 | Programmers | TypeScript, JavaScript |
+
+
+// 정리 예정 문법
+// "객체 정의 문법, for of, 배열 구조 할당, [...arr], join(``)" 정리
