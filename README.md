@@ -39,7 +39,7 @@ for of
 배열 구조 할당
 [...arr]
 join(``)
-아스키 코드 관련
+ch.charCodeAt(), String.fromCharCode()
 ```
 
 ---
@@ -116,3 +116,4 @@ join(``)
 | 20251004 | [대문자와 소문자↗️](https://school.programmers.co.kr/learn/courses/30/lessons/120893) | Lv0 | Programmers | TypeScript, JavaScript |
 | 20251005 | [영어가 싫어요↗️](https://school.programmers.co.kr/learn/courses/30/lessons/120894) | Lv0 | Programmers | TypeScript, JavaScript |
 | 20251006 | [인덱스 바꾸기↗️](https://school.programmers.co.kr/learn/courses/30/lessons/120895) | Lv0 | Programmers | TypeScript, JavaScript |
+| 20251009 | [한 번만 등장한 문자↗️](https://school.programmers.co.kr/learn/courses/30/lessons/120896) | Lv0 | Programmers | TypeScript, JavaScript |
