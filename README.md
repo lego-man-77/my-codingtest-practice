@@ -31,6 +31,18 @@ TS: TypeScript경로에서
 
 ---
 
+### 📝 Tech Blog Study
+// 블로그 주소 + 아이콘 추가 예정
+```
+JS, TS에서 객체 정의 문법
+for of
+배열 구조 할당,
+[...arr]
+join(``)
+```
+
+---
+
 ### ✅ 문제 풀이 기록
 
 | 풀이 날짜 | 문제 | 난이도 | 문제 출처 | 언어 |
@@ -103,14 +115,3 @@ TS: TypeScript경로에서
 | 20251004 | [대문자와 소문자↗️](https://school.programmers.co.kr/learn/courses/30/lessons/120893) | Lv0 | Programmers | TypeScript, JavaScript |
 | 20251005 | [영어가 싫어요↗️](https://school.programmers.co.kr/learn/courses/30/lessons/120894) | Lv0 | Programmers | TypeScript, JavaScript |
 | 20251006 | [인덱스 바꾸기↗️](https://school.programmers.co.kr/learn/courses/30/lessons/120895) | Lv0 | Programmers | TypeScript, JavaScript |
-
----
-
-### 📝 Memo
-```
-JS, TS에서 객체 정의 문법
-for of
-배열 구조 할당,
-[...arr]
-join(``)
-```
