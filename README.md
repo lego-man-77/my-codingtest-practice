@@ -12,7 +12,7 @@ git commit -m "date"
 
 ---
 
-### 🏃‍➡️ How to run coding-test-file
+### 🏃‍➡️ How to run "Coding Test File"
 ```
 ⚠️명령어 실행 시, 경로 주의⚠️
 
@@ -102,6 +102,15 @@ TS: TypeScript경로에서
 | 20251003 | [암호 해독↗️](https://school.programmers.co.kr/learn/courses/30/lessons/120892) | Lv0 | Programmers | TypeScript, JavaScript |
 | 20251004 | [대문자와 소문자↗️](https://school.programmers.co.kr/learn/courses/30/lessons/120893) | Lv0 | Programmers | TypeScript, JavaScript |
 | 20251005 | [영어가 싫어요↗️](https://school.programmers.co.kr/learn/courses/30/lessons/120894) | Lv0 | Programmers | TypeScript, JavaScript |
+| 20251006 | [인덱스 바꾸기↗️](https://school.programmers.co.kr/learn/courses/30/lessons/120895) | Lv0 | Programmers | TypeScript, JavaScript |
 
-// 정리 예정 문법
-// "객체 정의 문법, for of, 배열 구조 할당, [...arr], join(``)" 정리
+---
+
+### 📝 Memo
+```
+JS, TS에서 객체 정의 문법
+for of
+배열 구조 할당,
+[...arr]
+join(``)
+```
