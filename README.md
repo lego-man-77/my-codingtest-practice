@@ -1,6 +1,6 @@
 ### 🧑‍💻 Language
 ```
-JS, TS, C, C++, Python, etc.
+JS, TS, Java, C etc.
 ```
 
 ---
