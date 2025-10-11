@@ -40,6 +40,7 @@ for of
 [...arr]
 join(``)
 ch.charCodeAt(), String.fromCharCode()
+includes() <-> Set.has() 비교
 ```
 
 ---
