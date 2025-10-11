@@ -118,3 +118,4 @@ ch.charCodeAt(), String.fromCharCode()
 | 20251006 | [인덱스 바꾸기↗️](https://school.programmers.co.kr/learn/courses/30/lessons/120895) | Lv0 | Programmers | TypeScript, JavaScript |
 | 20251009 | [한 번만 등장한 문자↗️](https://school.programmers.co.kr/learn/courses/30/lessons/120896) | Lv0 | Programmers | TypeScript, JavaScript |
 | 20251010 | [과일 장수↗️](https://school.programmers.co.kr/learn/courses/30/lessons/135808) | Lv1 | Programmers | TypeScript, JavaScript |
+| 20251011 | [편지↗️](https://school.programmers.co.kr/learn/courses/30/lessons/120898) | Lv0 | Programmers | TypeScript, JavaScript |
