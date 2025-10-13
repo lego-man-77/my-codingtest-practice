@@ -32,7 +32,7 @@ TS: TypeScript경로에서
 ---
 
 ### 📝 Tech Blog Study
-// 블로그 주소 + 아이콘 추가 예정
+// 블로그 주소 추가 예정
 ```
 JS, TS에서 객체 정의 문법
 for of
