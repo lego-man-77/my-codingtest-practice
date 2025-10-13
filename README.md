@@ -38,7 +38,9 @@ JS, TS에서 객체 정의 문법
 for of
 배열 구조 할당
 [...arr]
-join(``)
+join("")
+map(value => String(value));
+sort((a, b) => a + b > b + a ? -1 : 1);
 ch.charCodeAt(), String.fromCharCode()
 includes() <-> Set.has() 비교
 ```
