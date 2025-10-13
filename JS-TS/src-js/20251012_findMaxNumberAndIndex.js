@@ -20,7 +20,6 @@
  * 예 #1 : 1, 8, 3 중 가장 큰 수는 8이고 인덱스 1에 있습니다.
  * 예 #2 : 9, 10, 11, 8 중 가장 큰 수는 11이고 인덱스 2에 있습니다.
  */
-
 const findMaxNumberAndIndex = (array) => {
   let maxNumber= array[0];
   let maxNumberIndex = 0;

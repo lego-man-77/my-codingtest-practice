@@ -1,6 +1,4 @@
 /**
- * 가장 큰 수 찾기
- * 
  * 문제 설명
  * 정수 배열 array가 매개변수로 주어질 때,
  * 가장 큰 수와 그 수의 인덱스를 담은 배열을 return 하도록
@@ -20,7 +18,6 @@
  * 예 #1 : 1, 8, 3 중 가장 큰 수는 8이고 인덱스 1에 있습니다.
  * 예 #2 : 9, 10, 11, 8 중 가장 큰 수는 11이고 인덱스 2에 있습니다.
  */
-
 const findMaxNumberAndIndex = (array: number[]): number[] => {
   let maxNumber: number = array[0];
   let maxNumberIndex: number = 0;
