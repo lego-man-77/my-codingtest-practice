@@ -121,3 +121,4 @@ includes() <-> Set.has() 비교
 | 20251010 | [과일 장수↗️](https://school.programmers.co.kr/learn/courses/30/lessons/135808) | Lv1 | Programmers | TypeScript, JavaScript |
 | 20251011 | [편지↗️](https://school.programmers.co.kr/learn/courses/30/lessons/120898) | Lv0 | Programmers | TypeScript, JavaScript |
 | 20251011 | [글자 지우기↗️](https://school.programmers.co.kr/learn/courses/30/lessons/181900) | Lv0 | Programmers | TypeScript, JavaScript |
+| 20251012 | [가장 큰 수 찾기↗️](https://school.programmers.co.kr/learn/courses/30/lessons/120899) | Lv0 | Programmers | TypeScript, JavaScript |
