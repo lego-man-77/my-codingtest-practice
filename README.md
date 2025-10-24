@@ -43,6 +43,7 @@ map(value => String(value));
 sort((a, b) => a + b > b + a ? -1 : 1);
 ch.charCodeAt(), String.fromCharCode()
 includes() <-> Set.has() 비교
+.concat
 ```
 
 ---
