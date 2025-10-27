@@ -44,6 +44,7 @@ sort((a, b) => a + b > b + a ? -1 : 1);
 ch.charCodeAt(), String.fromCharCode()
 includes() <-> Set.has() 비교
 .concat
+let table = record<key, value>, Object.keys(키 배열 반환), table[key](벨류 반환)
 ```
 
 ---
