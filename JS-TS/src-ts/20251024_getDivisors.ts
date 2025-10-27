@@ -30,6 +30,7 @@ const getDivisors = (n: number): number[] => {
 
 console.log(getDivisors(24));
 console.log(getDivisors(29));
+console.log(`========================`);
 
 const getDivisorsV2 = (n: number): number[] => {
   let smallNumberArray: number[] = [];

@@ -41,6 +41,7 @@ const calculateNumberOfString = (myString: string): number => {
 console.log(calculateNumberOfString("3 + 4")); // 7✅
 console.log(calculateNumberOfString("10 + 5 - 4")); // 11❌
 console.log(calculateNumberOfString("1 + 3 / 3 * 5 - 5")); // 1❌
+console.log(`========================`);
 
 // ⚠️이슈
   // 사칙연산 중에서 "더하기"만 가능
@@ -66,6 +67,7 @@ const calculateNumberOfStringV2 = (myString: string): number => {
 console.log(calculateNumberOfStringV2("3 + 4")); // 7✅
 console.log(calculateNumberOfStringV2("10 + 5 - 4")); // 11✅
 console.log(calculateNumberOfStringV2("1 + 3 / 3 * 5 - 5")); // 1❌
+console.log(`========================`);
 
 // ⛑️해결
   // 공백을 기준으로 나누어져 있는 myString을 split으로 배열로 변환,
