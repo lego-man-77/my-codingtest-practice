@@ -32,14 +32,16 @@ git commit -m "date"
 ```
 ⚠️명령어 실행 시, 경로 주의⚠️
 
-Code Runner
+Code Runner (현재 JS, TS 지원)
   ➡️ 원하는 코드에서 Con + Alt + N
 
-C: devcontainer/C/src경로에서
+C: devcontainer/C/src 경로에서
   ➡️ gcc -o {실행파일명} {.c파일명}
   ➡️ ./{실행파일명}
 
-TS: TypeScript경로에서
+JS: 
+
+TS: TypeScript 경로에서
   ➡️ Terminal에서 npm install -D
   ➡️ npx tsc
   ➡️ node dist/{.ts파일명}.js
