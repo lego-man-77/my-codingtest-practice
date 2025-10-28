@@ -4,8 +4,24 @@ TS, JS, C etc.
 ```
 
 ---
+### ✍️ (언어별로 수정필요)Code Style
+```
+JavaScript
+  ➡️ 코드 스타일 추가 + 간단 설명
 
-### 🤙 Commit Convention
+TypeScript
+  ➡️ 코드 스타일 추가 + 간단 설명
+
+Prettier
+  ➡️ 명령어
+
+ESLint
+  ➡️ 명령어
+```
+
+---
+
+### 🤙 (수정필요)Commit Convention
 ```
 git commit -m "date"
 ```
@@ -31,8 +47,11 @@ TS: TypeScript경로에서
 
 ---
 
-### 📝 Tech Blog Study
-// 블로그 주소 추가 예정
+### 📝 (임시)Tech Blog Study
+```
+(임시)블로그 주소 추가 예정
+```
+
 ```
 JS, TS에서 객체 정의 문법
 for of
@@ -128,6 +147,7 @@ let table = record<key, value>, Object.keys(키 배열 반환), table[key](벨�
 | 20251012 | [가장 큰 수 찾기↗️](https://school.programmers.co.kr/learn/courses/30/lessons/120899) | Lv0 | Programmers | TypeScript, JavaScript |
 | 20251013 | [가장 큰 수↗️](https://school.programmers.co.kr/learn/courses/30/lessons/42746) | Lv2 | Programmers | TypeScript, JavaScript |
 | 20251024 | [약수 구하기↗️](https://school.programmers.co.kr/learn/courses/30/lessons/120897?language=javascript) | Lv0 | Programmers | TypeScript, JavaScript |
-| 20251025 | [문자열 계산하기 + 응용↗️](https://school.programmers.co.kr/learn/courses/30/lessons/120902) | Lv0 | Programmers | TypeScript, JavaScript |
+| 20251025 | [문자열 계산하기↗️](https://school.programmers.co.kr/learn/courses/30/lessons/120902) | Lv0 | Programmers | TypeScript, JavaScript |
 | 20251026 | [배열의 유사도↗️](https://school.programmers.co.kr/learn/courses/30/lessons/120903) | Lv0 | Programmers | TypeScript, JavaScript |
 | 20251027 | [숫자 찾기↗️](https://school.programmers.co.kr/learn/courses/30/lessons/120904) | Lv0 | Programmers | TypeScript, JavaScript |
+| 20251028 | [n의 배수 고르기↗️](https://school.programmers.co.kr/learn/courses/30/lessons/120905) | Lv0 | Programmers | TypeScript, JavaScript |

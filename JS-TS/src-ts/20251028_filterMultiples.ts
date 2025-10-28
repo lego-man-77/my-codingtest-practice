@@ -19,7 +19,6 @@
  * 예 #2: numlist에서 5의 배수만을 남긴 [10, 5]를 return합니다.
  * 예 #3: numlist에서 12의 배수만을 남긴 [120, 600, 12, 12]를 return합니다.
  */
-
 const filterMultiples = (n: number, numlist: number[]): number[] => {
   let result: number[] = [];
   for(let i = 0; i < numlist.length; i = i + 1) {
@@ -33,3 +32,20 @@ const filterMultiples = (n: number, numlist: number[]): number[] => {
 console.log(filterMultiples(3, [4, 5, 6, 7, 8, 9, 10, 11, 12]));
 console.log(filterMultiples(5, [1, 9, 3, 10, 13, 5]));
 console.log(filterMultiples(12, [2, 100, 120, 600, 12, 12]));
+console.log(`========================`);
+
+// ⚠️이슈
+  // 코드 가독성 개선
+
+const filterMultiplesV2 = (n: number, numlist: number[]): number[] => {
+  return numlist.filter((numlistElement) => {
+    return numlistElement % n === 0;
+  })
+}
+
+console.log(filterMultiplesV2(3, [4, 5, 6, 7, 8, 9, 10, 11, 12]));
+console.log(filterMultiplesV2(5, [1, 9, 3, 10, 13, 5]));
+console.log(filterMultiplesV2(12, [2, 100, 120, 600, 12, 12]));
+
+// ⛑️해결
+  // filter함수 사용
