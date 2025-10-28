@@ -21,10 +21,13 @@
  * [0, 0, 0, 0]       "0"
  */
 const makeLargestNumber = (numbers: number[]): string => {
-  const numbersToString: string[] = numbers.map(value => String(value));
-  for(let i: number = 0; i < numbersToString.length; i = i + 1) {
-    for(let j: number = i + 1; j < numbersToString.length; j = j + 1) {
-      if(numbersToString[j] + numbersToString[i] > numbersToString[i] + numbersToString[j]) {
+  const numbersToString: string[] = numbers.map((value) => String(value));
+  for (let i: number = 0; i < numbersToString.length; i = i + 1) {
+    for (let j: number = i + 1; j < numbersToString.length; j = j + 1) {
+      if (
+        numbersToString[j] + numbersToString[i] >
+        numbersToString[i] + numbersToString[j]
+      ) {
         const temp: string = numbersToString[j];
         numbersToString[j] = numbersToString[i];
         numbersToString[i] = temp;
@@ -32,25 +35,25 @@ const makeLargestNumber = (numbers: number[]): string => {
     }
   }
   let result: string = ``;
-  for(let i: number = 0; i < numbersToString.length; i = i + 1) {
+  for (let i: number = 0; i < numbersToString.length; i = i + 1) {
     result = result + numbersToString[i];
   }
   return result;
-}
+};
 
 console.log(makeLargestNumber([6, 10, 2]));
 console.log(makeLargestNumber([3, 30, 34, 5, 9]));
 console.log(`========================`);
 
 const makeLargestNumberV2 = (numbers: number[]): string => {
-  const numbersToString = numbers.map(value => String(value));
-  numbersToString.sort((a, b) => a + b > b + a ? -1 : 1);
-  if(numbersToString[0] === "0") {
+  const numbersToString = numbers.map((value) => String(value));
+  numbersToString.sort((a, b) => (a + b > b + a ? -1 : 1));
+  if (numbersToString[0] === "0") {
     return "0";
   }
   return numbersToString.join("");
-}
+};
 
 console.log(makeLargestNumberV2([6, 10, 2]));
 console.log(makeLargestNumberV2([3, 30, 34, 5, 9]));
-console.log(makeLargestNumberV2([0, 0, 0 ,0]));
+console.log(makeLargestNumberV2([0, 0, 0, 0]));

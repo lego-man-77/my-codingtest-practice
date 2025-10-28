@@ -21,12 +21,19 @@
  * 입출력 예 #2
  * "I love you"의 3번째 인덱스 "o"와 " "(공백)을 바꾸면 "I l veoyou"입니다.
  */
-const swapStringIndex = (myString: string, num1: number, num2: number): string => {
+const swapStringIndex = (
+  myString: string,
+  num1: number,
+  num2: number,
+): string => {
   const myStringArray: string[] = [...myString];
-  [myStringArray[num1], myStringArray[num2]] = [myStringArray[num2], myStringArray[num1]] 
-  const result: string = myStringArray.join(``)
+  [myStringArray[num1], myStringArray[num2]] = [
+    myStringArray[num2],
+    myStringArray[num1],
+  ];
+  const result: string = myStringArray.join(``);
   return result;
-}
+};
 
-console.log(swapStringIndex("hello",1, 2)); // hlelo
+console.log(swapStringIndex("hello", 1, 2)); // hlelo
 console.log(swapStringIndex("I love you", 3, 6)); // I l veoyou

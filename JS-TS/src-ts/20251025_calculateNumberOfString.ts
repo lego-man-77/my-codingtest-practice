@@ -23,20 +23,20 @@
  * - 3 + 4 = 7을 return 합니다.
  */
 const calculateNumberOfString = (myString: string): number => {
-    let calNumber = 0;
-    let result = 0;
-    for(let i = 0; i < myString.length; i = i + 1) {
-        const parseIntMyString = parseInt(myString[i]);
-        if(!Number.isNaN(parseIntMyString)) {
-            calNumber = parseIntMyString;
-        } else if(myString[i] === "+") {
-            result = result + calNumber;
-            calNumber = 0;
-        }
+  let calNumber = 0;
+  let result = 0;
+  for (let i = 0; i < myString.length; i = i + 1) {
+    const parseIntMyString = parseInt(myString[i]);
+    if (!Number.isNaN(parseIntMyString)) {
+      calNumber = parseIntMyString;
+    } else if (myString[i] === "+") {
+      result = result + calNumber;
+      calNumber = 0;
     }
-    result = result + calNumber;
-    return result;
-}
+  }
+  result = result + calNumber;
+  return result;
+};
 
 console.log(calculateNumberOfString("3 + 4")); // 7✅
 console.log(calculateNumberOfString("10 + 5 - 4")); // 11❌
@@ -44,25 +44,25 @@ console.log(calculateNumberOfString("1 + 3 / 3 * 5 - 5")); // 1❌
 console.log(`========================`);
 
 // ⚠️이슈
-  // 사칙연산 중에서 "더하기"만 가능
-  // 두 자릿수 이상 숫자판별 불가
-  // 2개 이상의 연산 불가
-  // "곱하기, 나누기"와 같은 복합 연산 불가
+// 사칙연산 중에서 "더하기"만 가능
+// 두 자릿수 이상 숫자판별 불가
+// 2개 이상의 연산 불가
+// "곱하기, 나누기"와 같은 복합 연산 불가
 
 const calculateNumberOfStringV2 = (myString: string): number => {
-  const myStringArray = myString.split(` `)  
+  const myStringArray = myString.split(` `);
   let result = Number(myStringArray[0]);
-    for(let i = 1; i < myStringArray.length; i = i + 2) {
-        const op = myStringArray[i];
-        const calNumber = Number(myStringArray[i + 1]);
-        if(op === "+") {
-            result = result + calNumber;
-        } else if(op === "-") {
-            result = result - calNumber;
-        }
+  for (let i = 1; i < myStringArray.length; i = i + 2) {
+    const op = myStringArray[i];
+    const calNumber = Number(myStringArray[i + 1]);
+    if (op === "+") {
+      result = result + calNumber;
+    } else if (op === "-") {
+      result = result - calNumber;
     }
-    return result;
-}
+  }
+  return result;
+};
 
 console.log(calculateNumberOfStringV2("3 + 4")); // 7✅
 console.log(calculateNumberOfStringV2("10 + 5 - 4")); // 11✅
@@ -70,52 +70,54 @@ console.log(calculateNumberOfStringV2("1 + 3 / 3 * 5 - 5")); // 1❌
 console.log(`========================`);
 
 // ⛑️해결
-  // 공백을 기준으로 나누어져 있는 myString을 split으로 배열로 변환,
-  // "숫자 - 연산자 - 숫자 - 연산자"규칙을 이용하여 "두자릿수, 더하기, 빼기"연산 문제 해결
+// 공백을 기준으로 나누어져 있는 myString을 split으로 배열로 변환,
+// "숫자 - 연산자 - 숫자 - 연산자"규칙을 이용하여 "두자릿수, 더하기, 빼기"연산 문제 해결
 
 // ⚠️이슈
-  // "곱하기, 나누기"와 같은 복합 연산 불가
+// "곱하기, 나누기"와 같은 복합 연산 불가
 
 const calculateNumberOfStringV3 = (myString: string) => {
-    const myStringArray = myString.split(` `)
-    let resultArray: number[] = [Number(myStringArray[0])];
-    for(let i = 1; i < myStringArray.length; i = i + 2) {
-        const op: any = myStringArray[i];
-        const calNumber: number = Number(myStringArray[i + 1]);
-        if(op === "*") {
-            resultArray[resultArray.length - 1] = resultArray[resultArray.length - 1] * calNumber;
-        } else if(op === "/") {
-            resultArray[resultArray.length - 1] = resultArray[resultArray.length - 1] / calNumber;
-        } else {
-            resultArray.push(op, calNumber);
-        }
+  const myStringArray = myString.split(` `);
+  let resultArray: number[] = [Number(myStringArray[0])];
+  for (let i = 1; i < myStringArray.length; i = i + 2) {
+    const op: any = myStringArray[i];
+    const calNumber: number = Number(myStringArray[i + 1]);
+    if (op === "*") {
+      resultArray[resultArray.length - 1] =
+        resultArray[resultArray.length - 1] * calNumber;
+    } else if (op === "/") {
+      resultArray[resultArray.length - 1] =
+        resultArray[resultArray.length - 1] / calNumber;
+    } else {
+      resultArray.push(op, calNumber);
     }
-    
-    let result: number = resultArray[0];
-    for(let i = 1; i < resultArray.length; i = i + 2) {
-        const op: any = resultArray[i];
-        const calNumber = Number(resultArray[i + 1]);
-        if(op === "+") {
-            result = result + calNumber;
-        } else if(op === "-") {
-            result = result - calNumber;
-        }
+  }
+
+  let result: number = resultArray[0];
+  for (let i = 1; i < resultArray.length; i = i + 2) {
+    const op: any = resultArray[i];
+    const calNumber = Number(resultArray[i + 1]);
+    if (op === "+") {
+      result = result + calNumber;
+    } else if (op === "-") {
+      result = result - calNumber;
     }
-    return result;
-}
+  }
+  return result;
+};
 
 console.log(calculateNumberOfStringV3("3 + 4")); // 7✅
 console.log(calculateNumberOfStringV3("10 + 5 - 4")); // 11✅
 console.log(calculateNumberOfStringV3("1 + 3 / 3 * 5 - 5")); // 1✅
 
 // ⛑️해결
-  // "곱하기, 나누기"부터 먼저 연산
-  // "덧셈, 뺄셈"이 등장하는 경우, "연산자, 그 다음 숫자"를 resultArray에 추가
-  // resultArray의 "마지막 숫자"에만 연산을 하면 되기 때문에, "resultArray.length - 1"를 인덱스로 사용
+// "곱하기, 나누기"부터 먼저 연산
+// "덧셈, 뺄셈"이 등장하는 경우, "연산자, 그 다음 숫자"를 resultArray에 추가
+// resultArray의 "마지막 숫자"에만 연산을 하면 되기 때문에, "resultArray.length - 1"를 인덱스로 사용
 
 // ⚠️이슈
-  // TypeScript 특성 상, number[]에 string을 push 하려고 하자 타입 에러 발생 -> op: any로 임시해결
+// TypeScript 특성 상, number[]에 string을 push 하려고 하자 타입 에러 발생 -> op: any로 임시해결
 
 // 💡개선 가능성
-  // myString이 "공백 기준"이 아닌 "무작위 문자열 기준"으로 주어지는 경우
-  // 예: "5*4,-2/ 4@* 5"
+// myString이 "공백 기준"이 아닌 "무작위 문자열 기준"으로 주어지는 경우
+// 예: "5*4,-2/ 4@* 5"

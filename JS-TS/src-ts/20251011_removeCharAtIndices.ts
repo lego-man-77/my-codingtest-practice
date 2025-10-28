@@ -26,12 +26,14 @@
  */
 const removeCharAtIndices = (myString: string, indices: number[]): string => {
   let result: string = ``;
-  for(let i: number = 0; i < myString.length; i = i + 1) {
-    if(!indices.includes(i)) {
+  for (let i: number = 0; i < myString.length; i = i + 1) {
+    if (!indices.includes(i)) {
       result = result + myString[i];
     }
   }
   return result;
-}
+};
 
-console.log(removeCharAtIndices(`apporoograpemmemprs`, [1, 16, 6, 15, 0, 10, 11, 3]));
+console.log(
+  removeCharAtIndices(`apporoograpemmemprs`, [1, 16, 6, 15, 0, 10, 11, 3]),
+);

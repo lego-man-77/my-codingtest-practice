@@ -36,16 +36,15 @@
  * - num의 십진수 표기에서 k가 처음 나타나는 자리(1-based) 또는 없으면 -1
  */
 const findNumber = (num: number, k: number): number => {
-    const numberToString = String(num);
-    for(let i = 0; i < numberToString.length; i = i + 1) {
-        console.log(numberToString[i]);
-        if(Number(numberToString[i]) === k) {
-            return i + 1;
-        }
-
+  const numberToString = String(num);
+  for (let i = 0; i < numberToString.length; i = i + 1) {
+    console.log(numberToString[i]);
+    if (Number(numberToString[i]) === k) {
+      return i + 1;
     }
-    return -1;
-}
+  }
+  return -1;
+};
 
 console.log(findNumber(29183, 1));
 console.log(findNumber(232443, 4));

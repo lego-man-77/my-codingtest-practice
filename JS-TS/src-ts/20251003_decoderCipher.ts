@@ -27,12 +27,12 @@
  * "pfqallllabwaoclk" 의 2번째, 4번째, 6번째, 8번째, 10번째, 12번째, 14번째, 16번째 글자를 합친 "fallback"을 return합니다.
  */
 const decoderCipher = (cipher: string, code: number) => {
-    let answer: string = '';
-    for(let i = code - 1; i < cipher.length; i = i + code) {
-        answer = answer + cipher[i];
-    }
-    return answer;
-}
+  let answer: string = "";
+  for (let i = code - 1; i < cipher.length; i = i + code) {
+    answer = answer + cipher[i];
+  }
+  return answer;
+};
 
-console.log(decoderCipher(`dfjardstddetckdaccccdegk`, 4))
-console.log(decoderCipher(`pfqallllabwaoclk`, 2))
+console.log(decoderCipher(`dfjardstddetckdaccccdegk`, 4));
+console.log(decoderCipher(`pfqallllabwaoclk`, 2));

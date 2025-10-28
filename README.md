@@ -4,6 +4,7 @@ TS, JS, C etc.
 ```
 
 ---
+
 ### ✍️ (언어별로 수정필요)Code Style
 ```
 JavaScript
@@ -32,18 +33,27 @@ git commit -m "date"
 ```
 ⚠️명령어 실행 시, 경로 주의⚠️
 
-Code Runner (현재 JS, TS 지원)
+Code Runner
   ➡️ 원하는 코드에서 Con + Alt + N
+  ➡️ 현재 JS, TS 지원
+
+Markdown Preview
+  ➡️ Con + Shi + V
+  ➡️ VS Code 지원
 
 C: devcontainer/C/src경로에서
   ➡️ gcc -o {실행파일명} {.c파일명}
   ➡️ ./{실행파일명}
 
-JS: 
+JS:
+  ➡️ package.json파일이 있는 폴더에서 (/JS-TS)
+  ➡️ Terminal에 npm install -D 입력
+  ➡️ node src-js/{.js파일명}.js
 
-TS: TypeScript경로에서
-  ➡️ Terminal에서 npm install -D
-  ➡️ npx tsc
+TS: 
+  ➡️ package.json파일이 있는 폴더에서 (/JS-TS)
+  ➡️ Terminal에 npm install -D 입력
+  ➡️ npx tsc (dist 폴더에 ts가 js로 변환되어 저장됨)
   ➡️ node dist/{.ts파일명}.js
 ```
 
@@ -61,7 +71,7 @@ for of
 [...arr]
 join("")
 map(value => String(value));
-sor열.filter(() => {})
+배열.filter(() => {})
 ```
 
 ---

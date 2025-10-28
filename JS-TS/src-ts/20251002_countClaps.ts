@@ -25,13 +25,17 @@
 const countClaps = (order: number) => {
   const orderToString: string = String(order);
   let cnt: number = 0;
-  for(let i: number = 0; i < orderToString.length; i = i + 1) {
-    if(orderToString[i] === `3` || orderToString[i] === `6` || orderToString[i] === `9` ) {
+  for (let i: number = 0; i < orderToString.length; i = i + 1) {
+    if (
+      orderToString[i] === `3` ||
+      orderToString[i] === `6` ||
+      orderToString[i] === `9`
+    ) {
       cnt = cnt + 1;
     }
   }
   return cnt;
-}
+};
 
 console.log(countClaps(3)); // 1
 console.log(countClaps(29423)); // 2
