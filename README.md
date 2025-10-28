@@ -37,9 +37,8 @@ Code Runner
   ➡️ 원하는 코드에서 Con + Alt + N
   ➡️ 현재 JS, TS 지원
 
-Markdown Preview
+VS Code에서 Markdown Preview
   ➡️ Con + Shi + V
-  ➡️ VS Code 지원
 
 C: devcontainer/C/src경로에서
   ➡️ gcc -o {실행파일명} {.c파일명}
