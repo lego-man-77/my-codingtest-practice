@@ -7,6 +7,9 @@ TS, JS, C etc.
 
 ### ✍️ (언어별로 수정필요)Code Style
 ```
+파일내 함수 구분 출력문
+  ➡️ (`========================`);
+
 JavaScript
   ➡️ 코드 스타일 추가 + 간단 설명
 
@@ -33,12 +36,12 @@ git commit -m "date"
 ```
 ⚠️명령어 실행 시, 경로 주의⚠️
 
+VS Code에서 Markdown Preview
+  ➡️ Con + Shi + V
+
 Code Runner
   ➡️ 원하는 코드에서 Con + Alt + N
   ➡️ 현재 JS, TS 지원
-
-VS Code에서 Markdown Preview
-  ➡️ Con + Shi + V
 
 C: devcontainer/C/src경로에서
   ➡️ gcc -o {실행파일명} {.c파일명}
@@ -159,3 +162,4 @@ map(value => String(value));
 | 20251027 | [숫자 찾기↗️](https://school.programmers.co.kr/learn/courses/30/lessons/120904) | Lv0 | Programmers | TypeScript, JavaScript |
 | 20251028 | [n의 배수 고르기↗️](https://school.programmers.co.kr/learn/courses/30/lessons/120905) | Lv0 | Programmers | TypeScript, JavaScript |
 | 20251029 | [자릿수 더하기↗️](https://school.programmers.co.kr/learn/courses/30/lessons/12931) | Lv1 | Programmers | TypeScript, JavaScript |
+| 20251030 | [OX퀴즈↗️](https://school.programmers.co.kr/learn/courses/30/lessons/120907#) | Lv0 | Programmers | TypeScript, JavaScript |
