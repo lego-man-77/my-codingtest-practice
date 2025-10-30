@@ -56,6 +56,7 @@ const OXQuiz = (quiz: string[]): string[] => {
 
 console.log(OXQuiz(["3 - 4 = -3", "5 + 6 = 11"]));
 console.log(OXQuiz(["19 - 6 = 13", "5 + 66 = 71", "5 - 15 = 63", "3 - 1 = 2"]));
+console.log(`========================`);
 
 // ⚠️이슈
 // 코드 가독성 개선
