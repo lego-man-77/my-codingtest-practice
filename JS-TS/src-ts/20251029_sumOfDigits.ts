@@ -18,11 +18,11 @@
 const sumOfDigits = (n: number): number => {
   let result: number = 0;
   const nToString = String(n);
-  for(let i = 0; i < nToString.length; i = i + 1) {
+  for (let i = 0; i < nToString.length; i = i + 1) {
     result = result + Number(nToString[i]);
   }
   return result;
-}
+};
 
 console.log(sumOfDigits(123));
 console.log(sumOfDigits(987));
