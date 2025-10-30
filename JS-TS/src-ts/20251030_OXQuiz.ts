@@ -56,3 +56,32 @@ const OXQuiz = (quiz: string[]): string[] => {
 
 console.log(OXQuiz(["3 - 4 = -3", "5 + 6 = 11"]));
 console.log(OXQuiz(["19 - 6 = 13", "5 + 66 = 71", "5 - 15 = 63", "3 - 1 = 2"]));
+
+// ⚠️이슈
+// 코드 가독성 개선
+
+const OXQuizV2 = (quiz: string[]): string[] => {
+  let result: string[] = [];
+  for (let i = 0; i < quiz.length; i = i + 1) {
+    const [firstNumber, op, secondNumber, _, thirdNumber] = quiz[i].split(` `);
+    const x = Number(firstNumber);
+    const y = Number(secondNumber);
+    const z = Number(thirdNumber);
+    const calResult = String(op) === "+" ? x + y : x - y;
+    if (calResult !== z) {
+      result.push("X");
+    } else {
+      result.push("O");
+    }
+  }
+  return result;
+};
+
+console.log(OXQuizV2(["3 - 4 = -3", "5 + 6 = 11"]));
+console.log(OXQuizV2(["19 - 6 = 13", "5 + 66 = 71", "5 - 15 = 63", "3 - 1 = 2"]));
+
+// ⛑️해결
+// "구조 분해 할당" 사용
+// "TS 타입 에러" 방지를 위해서
+  // 1. 먼저 모든 원소를 string으로 split 한 후,
+  // 2. 숫자에만 Number() 사용
