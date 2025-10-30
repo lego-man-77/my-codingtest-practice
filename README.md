@@ -158,3 +158,4 @@ map(value => String(value));
 | 20251026 | [배열의 유사도↗️](https://school.programmers.co.kr/learn/courses/30/lessons/120903) | Lv0 | Programmers | TypeScript, JavaScript |
 | 20251027 | [숫자 찾기↗️](https://school.programmers.co.kr/learn/courses/30/lessons/120904) | Lv0 | Programmers | TypeScript, JavaScript |
 | 20251028 | [n의 배수 고르기↗️](https://school.programmers.co.kr/learn/courses/30/lessons/120905) | Lv0 | Programmers | TypeScript, JavaScript |
+| 20251029 | [자릿수 더하기↗️](https://school.programmers.co.kr/learn/courses/30/lessons/12931) | Lv1 | Programmers | TypeScript, JavaScript |
