@@ -74,6 +74,8 @@ for of
 join("")
 map(value => String(value));
 배열.filter(() => {})
+배열 or 문자열.includes()
+outer: 반복문, continue outer, break outer, label 개념
 ```
 
 ---
