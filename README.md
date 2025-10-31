@@ -163,3 +163,4 @@ map(value => String(value));
 | 20251028 | [n의 배수 고르기↗️](https://school.programmers.co.kr/learn/courses/30/lessons/120905) | Lv0 | Programmers | TypeScript, JavaScript |
 | 20251029 | [자릿수 더하기↗️](https://school.programmers.co.kr/learn/courses/30/lessons/12931) | Lv1 | Programmers | TypeScript, JavaScript |
 | 20251030 | [OX퀴즈↗️](https://school.programmers.co.kr/learn/courses/30/lessons/120907#) | Lv0 | Programmers | TypeScript, JavaScript |
+| 20251031 | [문자열안에 문자열↗️](https://school.programmers.co.kr/learn/courses/30/lessons/120908) | Lv0 | Programmers | TypeScript, JavaScript |
