@@ -46,8 +46,8 @@ const checkSubstringV2 = (str1: string, str2: string): number => {
     }
 
     if (isMatch) {
-        return 1;
-      }
+      return 1;
+    }
   }
   return 2;
 };
@@ -76,7 +76,7 @@ const checkSubstringV3 = (str1: string, str2: string): number => {
     return 1;
   }
   return 2;
-}
+};
 
 console.log(checkSubstringV3("ab6CDE443fgh22iJKlmn1o", "6CD"));
 console.log(checkSubstringV3("ppprrrogrammers", "pppp"));
