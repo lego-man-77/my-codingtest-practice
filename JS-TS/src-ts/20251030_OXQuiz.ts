@@ -79,10 +79,12 @@ const OXQuizV2 = (quiz: string[]): string[] => {
 };
 
 console.log(OXQuizV2(["3 - 4 = -3", "5 + 6 = 11"]));
-console.log(OXQuizV2(["19 - 6 = 13", "5 + 66 = 71", "5 - 15 = 63", "3 - 1 = 2"]));
+console.log(
+  OXQuizV2(["19 - 6 = 13", "5 + 66 = 71", "5 - 15 = 63", "3 - 1 = 2"]),
+);
 
 // ⛑️해결
 // "구조 분해 할당" 사용
 // "TS 타입 에러" 방지를 위해서
-  // 1. 먼저 모든 원소를 string으로 split 한 후,
-  // 2. 숫자에만 Number() 사용
+// 1. 먼저 모든 원소를 string으로 split 한 후,
+// 2. 숫자에만 Number() 사용
