@@ -103,3 +103,4 @@ console.log(countPickUpBox(13, 3, 6)); // 4
 console.log(countPickUpBox(5, 1, 2)); // 4
 console.log(countPickUpBox(16, 4, 7)); // 3
 console.log(countPickUpBox(16, 4, 1)); // 4
+console.log(countPickUpBox(14, 4, 5)); // 3
