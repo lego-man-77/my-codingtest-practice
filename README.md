@@ -67,15 +67,19 @@ TS:
 ```
 
 ```
-JS, TS에서 객체 정의 문법
+JS, TS에서 객체, json객체 정의하는 방법
 for of
 배열 구조 할당
-[...arr]
-join("")
+스프레드 [...arr]
+join()
+split()
 map(value => String(value));
+reduce(() => {})
 배열.filter(() => {})
 배열 or 문자열.includes()
 outer: 반복문, continue outer, break outer, label 개념
+toLowerCase(), // toUpperCase()
+sort(), reverse() -> 배열/문자열 각각 사용 예시
 ```
 
 ---
@@ -171,3 +175,4 @@ outer: 반복문, continue outer, break outer, label 개념
 | 20251103 | [세균 증식↗️](https://school.programmers.co.kr/learn/courses/30/lessons/120910) | Lv0 | Programmers | TypeScript, JavaScript |
 | 20251104 | [택배 상자 꺼내기↗️](https://school.programmers.co.kr/learn/courses/30/lessons/389478#) | Lv1 | Programmers | TypeScript, JavaScript |
 | 20251105 | [문자열 정렬하기 (2)↗️](https://school.programmers.co.kr/learn/courses/30/lessons/120911) | Lv0 | Programmers | TypeScript, JavaScript |
+| 20251105 | [7의 개수↗️](https://school.programmers.co.kr/learn/courses/30/lessons/120912) | Lv0 | Programmers | TypeScript, JavaScript |
