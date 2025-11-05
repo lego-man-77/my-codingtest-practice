@@ -32,3 +32,4 @@ const calTwiceGerm = (n: number, t: number): number => {
 
 console.log(calTwiceGerm(2, 10));
 console.log(calTwiceGerm(7, 15));
+console.log(calTwiceGerm(1, 1));
