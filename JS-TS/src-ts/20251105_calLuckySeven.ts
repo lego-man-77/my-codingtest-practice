@@ -21,6 +21,7 @@
  * [10, 29]에는 7이 없으므로 0을 return 합니다.
  */
 const calLuckySeven = (array: number[]): number => {
+  // 아이디어💡
   // 1. array의 모든 원소를 문자열로 합침
   // 2. 해당 문자열을 순회하며 7의 갯수 계산하여 반환
   let result = 0;
@@ -43,14 +44,14 @@ console.log(calLuckySeven([0])); // 0
 const calLuckySevenV2 = (array: number[]): number => {
   return array.join(``).split("7").length - 1;
   // 문자열.split("7").length - 1 ➡️ 7의 갯수를 의미
-}
+};
 
 const calLuckySevenV3 = (array: number[]): number => {
   return array.reduce((sum, e) => sum + (String(e).split("7").length - 1), 0);
   // sum의 초기값 0
   // array의 모든 원소(e)를 사용해서 각 원소를 돌때마다
   // sum + (String(e).split("7").length - 1) 실행
-}
+};
 
 console.log(calLuckySevenV2([7, 77, 17])); // 4
 console.log(calLuckySevenV2([10, 29])); // 0

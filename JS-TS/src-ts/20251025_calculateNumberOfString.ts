@@ -117,7 +117,3 @@ console.log(calculateNumberOfStringV3("1 + 3 / 3 * 5 - 5")); // 1✅
 
 // ⚠️이슈
 // TypeScript 특성 상, number[]에 string을 push 하려고 하자 타입 에러 발생 -> op: any로 임시해결
-
-// 💡개선 가능성
-// myString이 "공백 기준"이 아닌 "무작위 문자열 기준"으로 주어지는 경우
-// 예: "5*4,-2/ 4@* 5"

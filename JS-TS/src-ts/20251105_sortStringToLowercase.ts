@@ -19,6 +19,7 @@
  * 예 #3: "Python" → "python" → "hnopty"
  */
 const sortStringToLowercase = (myString: string): string => {
+  // 아이디어💡
   // 1. myString 각 문자를 ascii code로 변환 -> .charCodeAt(index)
   // 2. 만약 65 ~ 90 범위의 숫자는 "+ 32" ("A" ~ "Z")
   // 3. 변환한 숫자를 오름차순으로 정렬

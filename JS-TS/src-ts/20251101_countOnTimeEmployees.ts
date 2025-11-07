@@ -65,6 +65,8 @@
  * result   = 2
  */
 const countOnTimeEmployees = (
+  // 아이디어💡
+  // TIL 블로그 작성할 때 적기!!
   schedules: number[],
   timelogs: number[][],
   startDay: number,
