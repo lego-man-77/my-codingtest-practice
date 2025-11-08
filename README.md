@@ -74,7 +74,7 @@ for of
 join()
 split()
 map(value => String(value));
-reduce(() => {})
+배열.reduce(() => {})
 배열.filter(() => {})
 배열 or 문자열.includes()
 outer: 반복문, continue outer, break outer, label 개념
@@ -178,3 +178,4 @@ sort(), reverse() -> 배열/문자열 각각 사용 예시
 | 20251105 | [7의 개수↗️](https://school.programmers.co.kr/learn/courses/30/lessons/120912) | Lv0 | Programmers | TypeScript, JavaScript |
 | 20251105 | [잘라서 배열로 저장하기↗️](https://school.programmers.co.kr/learn/courses/30/lessons/120913) | Lv0 | Programmers | TypeScript, JavaScript |
 | 20251106 | [중복된 숫자 개수↗️](https://school.programmers.co.kr/learn/courses/30/lessons/120583#) | Lv0 | Programmers | TypeScript, JavaScript |
+| 20251107 | [머쓱이보다 키 큰 사람↗️](https://school.programmers.co.kr/learn/courses/30/lessons/120585) | Lv0 | Programmers | TypeScript, JavaScript |
