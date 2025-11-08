@@ -177,3 +177,4 @@ sort(), reverse() -> 배열/문자열 각각 사용 예시
 | 20251105 | [문자열 정렬하기 (2)↗️](https://school.programmers.co.kr/learn/courses/30/lessons/120911) | Lv0 | Programmers | TypeScript, JavaScript |
 | 20251105 | [7의 개수↗️](https://school.programmers.co.kr/learn/courses/30/lessons/120912) | Lv0 | Programmers | TypeScript, JavaScript |
 | 20251105 | [잘라서 배열로 저장하기↗️](https://school.programmers.co.kr/learn/courses/30/lessons/120913) | Lv0 | Programmers | TypeScript, JavaScript |
+| 20251106 | [중복된 숫자 개수↗️](https://school.programmers.co.kr/learn/courses/30/lessons/120583#) | Lv0 | Programmers | TypeScript, JavaScript |
