@@ -1,19 +1,19 @@
 /**
  * 문제 설명
- * 머쓱이는 학교에서 키 순으로 줄을 설 때 몇 번째로 서야 하는지 궁금해졌습니다. 
- * 머쓱이네 반 친구들의 키가 담긴 정수 배열 array와 머쓱이의 키 height가 매개변수로 주어질 때, 
+ * 머쓱이는 학교에서 키 순으로 줄을 설 때 몇 번째로 서야 하는지 궁금해졌습니다.
+ * 머쓱이네 반 친구들의 키가 담긴 정수 배열 array와 머쓱이의 키 height가 매개변수로 주어질 때,
  * 머쓱이보다 키 큰 사람 수를 return 하도록 solution 함수를 완성해보세요.
- * 
+ *
  * 제한사항
  * 1 ≤ array의 길이 ≤ 100
  * 1 ≤ height ≤ 200
  * 1 ≤ array의 원소 ≤ 200
- * 
+ *
  * 입출력 예
  * array	            height	result
  * [149, 180, 192, 170]	167	    3
  * [180, 120, 140]	    190	    0
- * 
+ *
  * 입출력 예 설명
  * #1) 149, 180, 192, 170 중 머쓱이보다 키가 큰 사람은 180, 192, 170으로 세 명입니다.
  * #2) 180, 120, 140 중 190보다 큰 수는 없으므로 0명입니다.
@@ -23,13 +23,17 @@ const countTaller = (array: number[], height: number): number[] => {
   // array를 순환하며 height보다 작은 수를 발견할 때마다 result +1
   // "reduce, filter" 사용 연습
   const reduceArray = array.reduce((sum, v) => sum + (v > height ? 1 : 0), 0);
-  console.log(`(reduce를 사용했을 경우) 머쓱이보다 키 큰 사람은 ${reduceArray}명`);
+  console.log(
+    `(reduce를 사용했을 경우) 머쓱이보다 키 큰 사람은 ${reduceArray}명`,
+  );
 
-  const filterArray = array.filter(v => v > height).length;
-  console.log(`(filter를 사용했을 경우) 머쓱이보다 키 큰 사람은 ${filterArray}명`);
+  const filterArray = array.filter((v) => v > height).length;
+  console.log(
+    `(filter를 사용했을 경우) 머쓱이보다 키 큰 사람은 ${filterArray}명`,
+  );
 
   return [reduceArray, filterArray];
-}
+};
 
-console.log(countTaller([149, 180, 192, 170], 167)) // 3;
+console.log(countTaller([149, 180, 192, 170], 167)); // 3;
 console.log(countTaller([180, 120, 140], 190)); // 0

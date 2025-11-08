@@ -70,7 +70,7 @@ TS:
 JS, TS에서 객체, json객체 정의하는 방법
 for of
 배열 구조 할당
-스프레드 [...arr]
+스프레드 연산자
 join()
 split()
 map(value => String(value));
@@ -179,3 +179,4 @@ sort(), reverse() -> 배열/문자열 각각 사용 예시
 | 20251105 | [잘라서 배열로 저장하기↗️](https://school.programmers.co.kr/learn/courses/30/lessons/120913) | Lv0 | Programmers | TypeScript, JavaScript |
 | 20251106 | [중복된 숫자 개수↗️](https://school.programmers.co.kr/learn/courses/30/lessons/120583#) | Lv0 | Programmers | TypeScript, JavaScript |
 | 20251107 | [머쓱이보다 키 큰 사람↗️](https://school.programmers.co.kr/learn/courses/30/lessons/120585) | Lv0 | Programmers | TypeScript, JavaScript |
+| 20251108 | [직사각형 넓이 구하기↗️](https://school.programmers.co.kr/learn/courses/30/lessons/120860) | Lv0 | Programmers | TypeScript, JavaScript |
