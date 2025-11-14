@@ -182,3 +182,4 @@ sort(), reverse() -> 배열/문자열 각각 사용 예시
 | 20251108 | [직사각형 넓이 구하기↗️](https://school.programmers.co.kr/learn/courses/30/lessons/120860) | Lv0 | Programmers | TypeScript, JavaScript |
 | 20251109 | [캐릭터의 좌표↗️](https://school.programmers.co.kr/learn/courses/30/lessons/120861) | Lv0 | Programmers | TypeScript, JavaScript |
 | 20251110 | [최댓값 만들기 (2)↗️](https://school.programmers.co.kr/learn/courses/30/lessons/120862) | Lv0 | Programmers | TypeScript, JavaScript |
+| 20251111 | [다항식 더하기↗️](https://school.programmers.co.kr/learn/courses/30/lessons/120863) | Lv0 | Programmers | TypeScript, JavaScript |
