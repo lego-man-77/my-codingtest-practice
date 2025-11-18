@@ -46,25 +46,26 @@ const calCoordinate = (keyInput: string[], board: number[]): number[] => {
   const maxSero = Math.floor((board[1] - 1) / 2);
 
   const delta: Record<string, number[]> = {
-    up:    [0, 1],
-    down:  [0, -1],
-    left:  [-1, 0],
+    up: [0, 1],
+    down: [0, -1],
+    left: [-1, 0],
     right: [1, 0],
   };
 
-  let x = 0, y = 0;
+  let x = 0,
+    y = 0;
 
   for (let i = 0; i < keyInput.length; i++) {
-    const [dx, dy] = delta[keyInput[i]]
+    const [dx, dy] = delta[keyInput[i]];
     if (Math.abs(x + dx) <= maxGaro && Math.abs(y + dy) <= maxSero) {
       x = x + dx;
       y = y + dy;
     }
   }
   return [x, y];
-}
+};
 
-console.log(calCoordinate(["left","right","up","right","right"], [11, 11])); // [2, 1]
-console.log(calCoordinate(["down","down","down","down","down"], [7, 9])); // [0, -4]
-console.log(calCoordinate(["up","down"], [0, 0])); // [0, 0]
-console.log(calCoordinate(['up', 'up', 'right', 'up'], [5, 5])); // [1, 2]
+console.log(calCoordinate(["left", "right", "up", "right", "right"], [11, 11])); // [2, 1]
+console.log(calCoordinate(["down", "down", "down", "down", "down"], [7, 9])); // [0, -4]
+console.log(calCoordinate(["up", "down"], [0, 0])); // [0, 0]
+console.log(calCoordinate(["up", "up", "right", "up"], [5, 5])); // [1, 2]

@@ -35,7 +35,7 @@ const addPolynomial = (polynomial: string): string => {
   // 아이디어💡
   // ` + `를 기준으로 주어진 배열 split
   // x앞 숫자, 일반 숫자를 담을 변수 정의
-  const polynomialArray = polynomial.split(` + `)
+  const polynomialArray = polynomial.split(` + `);
   let numberWithX = 0;
   let constant = 0;
 
@@ -44,13 +44,13 @@ const addPolynomial = (polynomial: string): string => {
   // x가 있는 원소는 "x앞 숫자" 변수에 더함
   // (여기서 편의성을 위해 x가 있는 원소를 `x`로 다시 split함
   // -> [숫자, 공백] 형태의 배열로 반환되기 때문에 [0]번째 원소가 x앞 숫자가 됨)
-  for(let i = 0; i < polynomialArray.length; i++) {
+  for (let i = 0; i < polynomialArray.length; i++) {
     const item = polynomialArray[i];
-    if(item[item.length - 1] !== `x`) {
+    if (item[item.length - 1] !== `x`) {
       constant = constant + Number(polynomialArray[i]);
     } else {
       const splitWithX = polynomialArray[i].split(`x`)[0];
-      if(splitWithX === ``) {
+      if (splitWithX === ``) {
         numberWithX = numberWithX + 1;
       } else {
         numberWithX = numberWithX + Number(splitWithX);
@@ -63,40 +63,40 @@ const addPolynomial = (polynomial: string): string => {
   let answer = ``;
 
   // 다항식에 "x"가 1개만 있는 경우 (예 ➡️ "x")
-  if(numberWithX === 1 && constant === 0) {
+  if (numberWithX === 1 && constant === 0) {
     answer = `x`;
-  
-  // 다항식에 "일반 숫자" 가 없고, "x" 만 있는 경우 (예 ➡️ "x + x + x")
-  } else if(numberWithX !== 0 && constant === 0) {
+
+    // 다항식에 "일반 숫자" 가 없고, "x" 만 있는 경우 (예 ➡️ "x + x + x")
+  } else if (numberWithX !== 0 && constant === 0) {
     answer = String(numberWithX) + `x`;
 
-  // 다항식에 "일반 숫자" 는 있지만, "x" 가 1개 있는 경우 (예 ➡️ "1 + x")
-  } else if(numberWithX === 1) {
+    // 다항식에 "일반 숫자" 는 있지만, "x" 가 1개 있는 경우 (예 ➡️ "1 + x")
+  } else if (numberWithX === 1) {
     answer = `x` + ` + ` + String(constant);
-  
-  // 다항식에 "일반 숫자" 만 있는 경우
+
+    // 다항식에 "일반 숫자" 만 있는 경우
   } else if (numberWithX === 0 && constant !== 0) {
     answer = String(constant);
 
-  // ["0", ""," "] 과 같은 0이나 공백이 들어올 경우
-  } else if(numberWithX === 0 && constant === 0) {
+    // ["0", ""," "] 과 같은 0이나 공백이 들어올 경우
+  } else if (numberWithX === 0 && constant === 0) {
     answer = `0이나 공백값이 입력되었습니다.`;
   }
-  
+
   // 일반적인 다항식인 경우
   else {
     answer = String(numberWithX) + `x` + ` + ` + String(constant);
   }
 
   return answer;
-}
+};
 
 console.log(addPolynomial("3x + 7 + x")); // "4x + 7"
-console.log(addPolynomial("x + x + x"));  // "3x"
-console.log(addPolynomial("x"));  // "x"
-console.log(addPolynomial("10x"));  // "10x"
-console.log(addPolynomial("1 + x"));  // "1 + x"
-console.log(addPolynomial("5"));  // "5"
-console.log(addPolynomial("0"));  // "0"
-console.log(addPolynomial(""));  // ""
-console.log(addPolynomial(" "));  // " "
+console.log(addPolynomial("x + x + x")); // "3x"
+console.log(addPolynomial("x")); // "x"
+console.log(addPolynomial("10x")); // "10x"
+console.log(addPolynomial("1 + x")); // "1 + x"
+console.log(addPolynomial("5")); // "5"
+console.log(addPolynomial("0")); // "0"
+console.log(addPolynomial("")); // ""
+console.log(addPolynomial(" ")); // " "

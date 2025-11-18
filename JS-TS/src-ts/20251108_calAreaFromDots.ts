@@ -98,7 +98,8 @@ const calAreaFromDotsV2 = (dots: number[][]): number => {
     return e[1];
   });
   return (
-    (Math.max(...xArray) - Math.min(...xArray)) * (Math.max(...yArray) - Math.min(...yArray))
+    (Math.max(...xArray) - Math.min(...xArray)) *
+    (Math.max(...yArray) - Math.min(...yArray))
   );
 };
 
