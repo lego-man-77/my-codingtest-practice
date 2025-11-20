@@ -32,7 +32,7 @@
  * - 따라서 108 + 10 + 1 + 1 = 120 을 return합니다.
  */
 const countServiceChicken = (chicken: number): number => {
-  /* 아이디어 정리 ✨  
+  /* 아이디어💡  
   
   - 반복의 기준
     가지고 있는 치킨 개수(chicken)와 쿠폰 개수(coupon)를 합쳤을 때,
@@ -59,7 +59,6 @@ const countServiceChicken = (chicken: number): number => {
   - 더 이상 쿠폰으로 치킨을 받을 수 없는 순간,
     즉 `chicken + coupon < 10` 이 되면 반복을 멈추고 지금까지 누적
   */
-
   let serviceChicken = 0;
   let coupon = 0;
   let result = 0;
